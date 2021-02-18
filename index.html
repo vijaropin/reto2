@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>reto</h2>
+
+<p id="asignar"></p>
+<p id="asignar1"></p>
+<p id="asignar2"></p>
+<p id="sumar"></p>
+<p id="sumar1"></p>
+<p id="sumar2"></p>
+<p id="restar"></p>
+<p id="multiplica"></p>
+<p id="divide"></p>
+<p id="resta"></p>
+<p id="funcion"></p>
+<p id="return"></p>
+<p id="celcius"></p>
+<p id="invocar"></p>
+<p id="pound"></p>
+<p id="local"></p>
+<p id="objet1"></p>
+<p id="objet2"></p>
+<p id="objet3"></p>
+<p id="variable1"></p>
+<p id="variable2"></p>
+<p id="variable3"></p>
+<p id="defobj"></p>
+<p id="defobj2"></p>
+<p id="defobj3"></p>
+<p id="Name1"></p>
+<p id="Name2"></p>
+<p id="Name3"></p>
+<p id="person1"></p>
+<p id="namethis"></p>
+<p id="models"></p>
+<p id="gmodels"></p>
+<p id="dep"></p>
+<p id="cap"></p>
+<p id="primpos"></p>
+<p id="secpos"></p>
+<p id="terpos"></p>
+<p id="camb"></p>
+<p id="camb1"></p>
+<p id="fruits"></p>
+<p id="Frutas"></p>
+<p id="Frutas2"></p>
+<p id="Frutas3"></p>
+<p id="Frutas4"></p>
+<p id="dep2"></p>
+<p id="dep3"></p>
+<p id="prueba"></p>
+
+
+<button onclick="Ingnew()">Ingresa uno nuevo</button>
+<p id="depart"></p>
+
+<p id="dep4"></p>
+
+<button onclick="Ingnew2()">ingrese uno Nuevo</button>
+<p id="dep5"></p>
+
+<p id="hashes"></p>
+<p id="hashes1"></p>
+
+<p id="depart2"></p>
+<p id="depart3"></p>
+
+
+<p>Ingrese su edad y de CLICK en el Boton:</p>
+<input id="age" value="18" />
+<button onclick="old()">segun tu edad eres </button>
+<p id="Old"></p>
+
+<p>Ingrese la edad y de click en el Boton:</p>
+<input id="age" value="18" />
+<button onclick="old2()">Ingrese su edad</button>
+<p id="Old2"></p>
+
+<p id="pruebaday"></p>
+
+<p id="loop"></p>
+<p id="pruebnum"></p>
+<p id="pruebwhile"></p>
+<p id="pruebdowhil"></p>
+
+
+
+<form id="frm1" action="/action_page.php">
+    First name: <input type="text" name="fname" value="MAQUIAVELO &"><br>
+    Last name: <input type="text" name="lname" value="COMPAÑIA"><br><br>
+   
+    <input type="submit" value="submit">
+
+  </form> 
+
+  <p>Mostrar valor formulario.</p>
+  <button onclick="Prubs()">Dar click</button>
+  <p id="maquiav"></p>
+
+
+
+<script>
+
+/*asignacion1*/
+var z = 10;
+document.getElementById("asignar").innerHTML = z;
+/*fin asignacion1*/
+
+/*asignacion2*/
+var x = 100;
+document.getElementById("asignar1").innerHTML = x;
+/*fin asignacion2*/
+
+/*asignacion3*/
+var y = 100000;
+document.getElementById("asignar2").innerHTML = y;
+/*fin asignacion3*/
+
+/*agregar o sumar un valor a una variable*/
+var b = 105;
+b += 205;
+document.getElementById("sumar").innerHTML = b;
+/*fin adicion*/
+
+/*agregar o sumar un valor a una variable*/
+var h = 1000;
+h +=205;
+document.getElementById("sumar1").innerHTML = h;
+
+/*fin adicion*/
+
+/*agregar o sumar un valor a una variable*/
+var j = 964;
+j +=378;
+document.getElementById("sumar2").innerHTML = j;
+
+/*fin adicion*/
+
+
+/*restar valor a una variable*/
+var k = 78;
+k -= 35;
+document.getElementById("restar").innerHTML = k;
+/*fin restar */
+
+/*multiplica a una variable*/
+var l = 10;
+l *= 5;
+document.getElementById("multiplica").innerHTML = l;
+/*fin multiplica*/
+
+/*divide a una variable*/
+var f = 800;
+f /= 100;
+document.getElementById("divide").innerHTML = f;
+/*fin divide*/
+
+/*resta a una variable*/
+var d = 455;
+d %= 400;
+document.getElementById("resta").innerHTML = d;
+/*fin resta*/
+
+/*ingresa una function*/
+
+function newFunction(a1, a2) {
+  return a1 * a2;
+}
+document.getElementById("funcion").innerHTML = newFunction(25, 3);
+/*finaliza una function*/
+
+/*ingresa return*/
+
+var x = newfunction(50, 50);
+document.getElementById("return").innerHTML = x;
+
+function newfunction(a, b) {
+  return a * b;
+}
+/*fin return*/
+
+/*ingresa funcion celcius*/
+function toCelsius(f) {
+  return (34/6) * (f-32);
+}
+document.getElementById("celcius").innerHTML = toCelsius(77);
+/*ingresa funcion celcius*/
+
+/*ingresa funcion invocar*/
+function toCelsius(f) {
+  return (34/6) * (f-32);
+}
+document.getElementById("invocar").innerHTML = toCelsius;
+/*fin funcion invocar*/
+
+/*ingresa funcion valores variables*/
+document.getElementById("pound").innerHTML =
+"el peso es " + topound(0.002205) + " libras";
+
+function topound(pound) {
+  return (5/9) * (pound-500);
+} 
+/*fin funcion valores variables*/
+
+
+/*inicio funcion valores locales*/
+myFunction();
+
+function myFunction() {
+  var carName = "FriendlightNier";
+  document.getElementById("local").innerHTML =
+  typeof carName + " " + carName;
+}
+/*fin funcion valores locales*/
+
+/*inicio objeto simple*/
+var car = "Hyundai";
+document.getElementById("objet1").innerHTML = car;
+/*inicio objeto simple*/
+
+/*inicio objeto simple2*/
+var car = "Kia";
+document.getElementById("objet2").innerHTML = car;
+/*inicio objeto simple2*/
+
+/*inicio objeto simple3*/
+var car = "Renault";
+document.getElementById("objet3").innerHTML = car;
+/*inicio objeto simple3*/
+
+
+/*objects with variables*/
+var car = {type:"Hyundai", model:"2019", color:"green"};
+
+/* call only variable:
+document.getElementById("variable1").innerHTML = "El vehiculo es de la marca " + car.type;
+/* END objects with variables*/
+
+/*objects with variables2*/
+var car = {type:"Hyundai", model:"2019", color:"green"};
+
+
+/* call only variable:
+document.getElementById("variable2").innerHTML = "El vehiculo es Modelo " + car.model;
+/* END objects with variables2*/
+
+
+/*objects with variables3*/
+var car = {type:"Hyundai", model:"2019", color:"VERDE"};
+/* call only variable*/
+document.getElementById("variable3").innerHTML = "El vehiculo es de color " + car.color;
+/* END objects with variables3*/
+
+
+/* definition object*/
+var person = {firstName:"Antonio", lastName:"Gutierrez", age:65, eyeColor:"Verde"};
+/* look at only one variable*/
+document.getElementById("defobj").innerHTML =
+person.firstName + " tiene " + person.age + " años de edad.";
+/* end definition object*/
+
+
+/* definition object2*/
+var person = {firstName:"Antonio", lastName:"Gutierrez", age:65, eyeColor:"Verde"};
+/* look at only one variable*/
+document.getElementById("defobj2").innerHTML =
+"El Sr " + person.lastName + " tiene Ojos de color " + person.eyeColor;
+/* end definition object2*/
+
+/* definition object3*/
+var person = {firstName:"Antonio", lastName:"Gutierrez", age:65, eyeColor:"Verde", from:"Segovia", from2:"Antioquia"};
+/* look at only one variable*/
+document.getElementById("defobj3").innerHTML =
+person.firstName +" " +  person.lastName + ",  es de  " +  person.from + " " + person.from2;
+/* end definition object3*/
+
+
+/* object properties access*/
+var person = {
+  firstName: "Oscar",
+  lastName : "Martinez",
+  id     :  79895000
+};
+/* look at only one variable*/
+document.getElementById("Name1").innerHTML =
+person.firstName + " " + person.lastName;
+/* End object properties access*/
+
+
+/* object properties access2*/
+var person = {
+  firstName: "Oscar",
+  lastName : "Martinez",
+  id     :  79895453 ,
+  Exp:"Monteria"
+};
+/* look at only one variable*/
+document.getElementById("Name2").innerHTML =
+"El Id del Sr "+ person.lastName + " es " + person.id;
+/* End object properties access2*/
+
+
+/* object properties access3*/
+var person = {
+  firstName: "Oscar",
+  lastName : "Martinez",
+  id     :  79895453 ,
+  Exp:"Monteria"
+};
+/* look at only one variable*/
+document.getElementById("Name3").innerHTML =
+"Su No. de Id. " + person.id + " Sr. "+ person.firstName + " " + person.lastName + ". Fue expedida en  " + person.Exp;
+/* End object properties access3*/
+
+
+/* object properties access person*/
+var person = {
+  firstName: "Oscar",
+  lastName : "Martinez",
+  id     :  79895000
+};
+/* look at only one variable*/
+document.getElementById("person1").innerHTML =
+person["firstName"] + " " + person["lastName"];
+/* object properties access person*/
+
+
+/* object properties access this*/
+var person = {
+  firstName: "Margarita",
+  lastName : "Sepulveda",
+  id     : 5566889976,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+/* look at only one variable*/
+document.getElementById("namethis").innerHTML = person.fullName();
+/* fin object properties access this*/
+
+
+/* Las matrices JavaScript se utilizan para almacenar varios valores en una sola variable*/
+var models = ["Renault", "Volswagen", "Kia" , "Hyundai" , "Mercedes" , "Ferrari"];
+document.getElementById("models").innerHTML = models;
+
+/* FIN Las matrices JavaScript se utilizan para almacenar varios valores en una sola variable*/
+
+/* Las matrices JavaScript se utilizan para almacenar varios valores en una sola variable*/
+var gmodels = ["Naomi Cambel", "Silvia Sherassi", "Antonio Banderas" , "Oscar de la Renta" , "Mercedes Soler" , "Michael Jordan"];
+document.getElementById("gmodels").innerHTML = gmodels;
+/* FIN Las matrices JavaScript se utilizan para almacenar varios valores en una sola variable*/
+
+
+/* new array*/
+var dep = new Array("Antioquia", "Arauca", "Amazonas", "Atlantico");
+document.getElementById("dep").innerHTML = dep;
+
+var cap = new Array("Medellin", "Arauca", "Leticia", "Barranquilla");
+document.getElementById("cap").innerHTML = cap;
+/* FIN new array*/
+
+
+/* new array 1ra posicion*/
+var primpos = ["Oscar", "antonio", "magdalena"];
+document.getElementById("primpos").innerHTML = primpos[0];
+/* FIN new array 1ra posicion*/
+
+/* new array 2da posicion*/
+var secpos = ["Oscar", "antonio", "magdalena"];
+document.getElementById("secpos").innerHTML = secpos[1];
+/* FIN new array 2da posicion*/
+
+/* new array 3ra posicion*/
+var terpos = ["Oscar", "antonio", "magdalena"];
+document.getElementById("terpos").innerHTML = terpos[2];
+/* FIN new array 3ra posicion*/
+
+
+
+/* cambio 1ra posicion*/
+var camb = ["Saab", "Kia", "Renault"];
+camb[0] = "cambio por este";
+document.getElementById("camb").innerHTML = camb;
+/* FIN cambio 1ra posicion*/
+
+
+/* cambio 3ra posicion*/
+var camb1 = ["Saab", "Kia", "Renault"];
+camb1[2] = "cambio por este";
+document.getElementById("camb1").innerHTML = camb1;
+/* FIN cambio 3ra posicion*/
+
+/* La propiedad length devuelve la longitud de una matriz.*/
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("fruits").innerHTML = fruits.length;
+/* La propiedad length devuelve la longitud de una matriz.*/
+
+/*Acceso al primer elemento de matriz*/
+var Frutas = ["Papaya", "patilla", "piña", "pitaya"];
+var first = Frutas[0];
+document.getElementById("Frutas").innerHTML = first;
+/*Acceso al primer elemento de matriz*/
+
+/*Acceso al primer elemento de matriz*/
+var Frutas = ["Papaya", "patilla", "piña", "pitaya"];
+var first = Frutas[0];
+document.getElementById("Frutas").innerHTML = first;
+/*Acceso al primer elemento de matriz*/
+
+/*Acceso al tercer elemento de matriz*/
+var Frutas2 = ["Papaya", "patilla", "piña", "pitaya"];
+var Third = Frutas2[2];
+document.getElementById("Frutas2").innerHTML = Third;
+/*Acceso al tercer  elemento de matriz*/
+
+/*Acceso al quinto elemento de matriz*/
+var Frutas3 = ["Papaya", "patilla", "piña", "pitaya", "Marañon"];
+var Fifth = Frutas3[4];
+document.getElementById("Frutas3").innerHTML = Fifth;
+/*Acceso al quinto elemento de matriz*/
+
+/*Acceso al ultimo elemento de matriz*/
+var Frutas4 = ["Banana", "Orange", "Apple", "pitaya"];
+var last = Frutas4[Frutas4.length-1];
+document.getElementById("Frutas4").innerHTML = last;
+/*Acceso al ultimo elemento de matriz*/
+
+/* ARRAY FOR*/
+var dep2, text, fLen, i;
+dep2 = ["Antioquia", "Arauca", "Amazonas", "Atlantico"];
+fLen = dep2.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + dep2[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("dep2").innerHTML = text;
+/* ARRAY FOR*/
+
+
+/* ARRAY FOR2*/
+var dep3, text, fLen, i;
+dep3 = ["Cauca", "quindio", "armenia", "Putumayo", "casanare", "guajira", "Cordoba"];
+fLen = dep3.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + dep3[i] + "</li>";
+}
+text += "</ul>";
+document.getElementById("dep3").innerHTML = text;
+/* ARRAY FOR2*/
+
+
+/*Array.forEach() llama a una función para cada elemento de matriz*/
+var cap2, text;
+cap2 = ["leticia", "sincelejo", "cartagena", "tunja", "pereira", "Armenia"];
+
+text = "<ul>";
+cap2.forEach(prueba);
+text += "</ul>";
+document.getElementById("prueba").innerHTML = text;
+
+function prueba(value) {
+  text += "<li>" + value + "</li>";
+} 
+/*Array.forEach() llama a una función para cada elemento de matriz*/
+
+/*El método push anexa un nuevo elemento a una matriz.*/
+var depart = ["Sucre", "Guainia", "Vaupes", "Santander"];
+document.getElementById("depart").innerHTML = depart;
+
+function Ingnew() {
+  depart.push("TOLIMA");
+  document.getElementById("depart").innerHTML = depart;
+}
+
+/*El método push anexa un nuevo elemento a una matriz.*/
+
+
+/*convierte una matriz en una cadena de valores de matriz (separados por comas)*/
+var dep4 = ["Sucre", "Guainia", "Vaupes", "Santander"];
+document.getElementById("dep4").innerHTML = dep4.toString();
+/*convierte una matriz en una cadena de valores de matriz (separados por comas)*/
+
+/*La propiedad length anexa nuevo elemento sin el PUSH*/
+
+var depart3 = ["Valle del cauca", "San Andres y Providencia", "Guainia", "Putumayo"];
+document.getElementById("dep5").innerHTML = depart3;
+
+function Ingnew2() {
+  depart3[depart3.length] = "CHOCO";
+  document.getElementById("dep5").innerHTML = depart3;
+}
+/*fin La propiedad length anexa nuevo elemento sin el PUSH*/
+
+
+/*Matriz asociativa indice con nombre o hashes*/
+var person = [];
+person[0] = "Maria Corina";
+person[1] = "Machado";
+person[2] = 56; 
+document.getElementById("hashes").innerHTML =
+person[0] + " " + person.length;
+
+
+/*Matriz asociativa indice con nombre o hashes*/
+var personm = [];
+personm[0] = "Maria Corina";
+personm[1] = "Machado";
+personm[2] = 56; 
+document.getElementById("hashes1").innerHTML =
+personm[1] + personm.length + " " ;
+
+/* fin Matriz asociativa indice con nombre*/
+
+
+/*Typeof identifica si es un objeto ()= arreglo []= objeto */
+
+var depesp = ["Bogota D.C.", "Magdalena", "cesar", "cauca"];
+document.getElementById("depart2").innerHTML = typeof depesp;
+/*Typeof identifica si es un objeto ()= arreglo []= objeto */
+
+/*Array.isarray identifica si es un []= objeto con TRUE*/
+var depesp = ["Bogota D.C.", "Magdalena", "cesar", "cauca"];
+document.getElementById("depart3").innerHTML = Array.isArray(depesp);
+/*FIN Array.isarray identifica si es un []= objeto con TRUE*/
+
+
+/*Operador condicional en funcion de una variable "voteable"*/
+function old() {
+  var age, voteable;
+  age = document.getElementById("age").value;
+  voteable = (age < 16) ? "Demasiado Joven":"Demasiado Viejo";
+  document.getElementById("Old").innerHTML = voteable + " y QUE, PERO TIENES QUE TRABAJAR ";
+}
+
+/* fin Operador condicional en funcion de una variable*/
+
+/*convertir antes de comparar*/
+function old2() {
+  var age, voteable;
+  age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "Boton no es un numero";
+  } else {
+    voteable = (age < 18) ? "demasiado Joven" : "Demasiado Joven";
+  }
+  document.getElementById("Old2").innerHTML = voteable;
+}
+
+/*Fin convertir antes de comparar*/
+
+/*convertir antes de comparar*/
+
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Lunes";
+    break;
+  case 1:
+    day = "martes";
+    break;
+  case 2:
+    day = "miercoles";
+    break;
+  case 3:
+    day = "jueves";
+    break;
+  case 4:
+    day = "viernes";
+    break;
+  case 5:
+    day = "sabado";
+    break;
+  case  6:
+    day = "domingo";
+}
+document.getElementById("pruebaday").innerHTML = "hoy es " + day;
+
+/*Fin convertir antes de comparar*/
+
+
+/*For loop ejecutar el mismo código una y otra vez*/
+var dep6 = ["Quindio", "Nariño", "Sucre", "Cundinamarca", "Vichada", "Magdalena"];
+var text = "";
+var i;
+for (i = 0; i < dep6.length; i++) {
+  text += dep6[i] + "<br>";
+}
+document.getElementById("loop").innerHTML = text;
+/*Fin For loop*/
+
+
+var text = "";
+var i;
+  for (i = 0; i < 5; i++) {
+    text += " el numero es "+ i + "<br>";
+} 
+document.getElementById ("pruebnum").innerHTML = text;
+
+/*Fin For loop*/
+
+
+/*Inicio while*/
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br> El numero es  " + i;
+  i++;
+}
+document.getElementById("pruebwhile").innerHTML = text;
+
+
+/*Inicio do - while*/
+var text = ""
+var i = 0;
+
+do {
+  text += "<br> El numero es  " + i;
+  i++;
+}
+while (i < 12);  
+
+document.getElementById("pruebdowhil").innerHTML = text;
+
+
+/*elemento:id="frm1"*/
+
+function Prubs() {
+  var x = document.forms["frm1"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("maquiav").innerHTML = text;
+}
+/*elemento:id="frm1"*/
+
+
+
+
+</script>
+
+</body>
+</html>
